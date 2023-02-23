@@ -1,0 +1,104 @@
+{
+    "summoner":
+    {
+        "name": "genetory",
+        "level": 106,
+        "profileImageUrl": "https://opgg-static.akamaized.net/images/profile_icons/profileIcon1625.jpg",
+        "profileBorderImageUrl": "https://opgg-static.akamaized.net/images/borders2/challenger.png",
+        "url": "https://www.op.gg/summoner/userName=genetory",
+        "leagues":
+        [
+            {
+                "hasResults": true,
+                "wins": 278,
+                "losses": 546,
+                "tierRank":
+                {
+                    "name": "솔랭",
+                    "tier": "Platinum",
+                    "tierDivision": "Platinum",
+                    "string": "Platinum (496LP)",
+                    "shortString": "P1",
+                    "division": "i",
+                    "imageUrl": "https://opgg-static.akamaized.net/images/medals/platinum_1.png",
+                    "lp": 496,
+                    "tierRankPoint": 15
+                }
+            },
+            {
+                "hasResults": true,
+                "wins": 866,
+                "losses": 727,
+                "tierRank":
+                {
+                    "name": "자유 5:5 랭크",
+                    "tier": "Platinum",
+                    "tierDivision": "Platinum",
+                    "string": "Platinum (553LP)",
+                    "shortString": "P1",
+                    "division": "i",
+                    "imageUrl": "https://opgg-static.akamaized.net/images/medals/platinum_1.png",
+                    "lp": 553,
+                    "tierRankPoint": 63
+                }
+            }
+        ],
+        "previousTiers":
+        [
+            {
+                "name": "솔랭",
+                "tier": "Master",
+                "tierDivision": "Master",
+                "string": "Master (121LP)",
+                "shortString": "M1",
+                "division": "i",
+                "imageUrl": "https://opgg-static.akamaized.net/images/medals/master_1.png",
+                "lp": 121,
+                "tierRankPoint": 305,
+                "season": 9
+            },
+            {
+                "name": "솔랭",
+                "tier": "Platinum",
+                "tierDivision": "Platinum",
+                "string": "Platinum (992LP)",
+                "shortString": "P1",
+                "division": "i",
+                "imageUrl": "https://opgg-static.akamaized.net/images/medals/platinum_1.png",
+                "lp": 992,
+                "tierRankPoint": 438,
+                "season": 8
+            },
+            {
+                "name": "솔랭",
+                "tier": "Master",
+                "tierDivision": "Master",
+                "string": "Master (359LP)",
+                "shortString": "M1",
+                "division": "i",
+                "imageUrl": "https://opgg-static.akamaized.net/images/medals/master_1.png",
+                "lp": 359,
+                "tierRankPoint": 32,
+                "season": 7
+            },
+            {
+                "name": "솔랭",
+                "tier": "Platinum",
+                "tierDivision": "Platinum",
+                "string": "Platinum (656LP)",
+                "shortString": "P1",
+                "division": "i",
+                "imageUrl": "https://opgg-static.akamaized.net/images/medals/platinum_1.png",
+                "lp": 656,
+                "tierRankPoint": 489,
+                "season": 6
+            }
+        ],
+        "ladderRank":
+        {
+            "rank": 564182,
+            "rankPercentOfTop": 29
+        },
+        "profileBackgroundImageUrl": "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_0.jpg"
+    }
+}
