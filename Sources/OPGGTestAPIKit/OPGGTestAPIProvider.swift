@@ -6,6 +6,12 @@ public final class OPGGTestAPIProvider {
     
     public static let shared: OPGGTestAPIProvider = OPGGTestAPIProvider()
     
+    private static let decoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .secondsSince1970
+        return decoder
+    }()
+    
     private let provider: MoyaProvider<OPGGTestAPI> = MoyaProvider<OPGGTestAPI>(stubClosure: { target in
         #if DEBUG
         return .immediate
@@ -18,7 +24,8 @@ public final class OPGGTestAPIProvider {
         _ = self.provider
             .rx
             .request(target)
-            .map(T.self)
+            .map(T.self, using: Self.decoder)
+            .debug()
             .subscribe { value in
                 completionHandler(.success(value))
             } onFailure: { error in

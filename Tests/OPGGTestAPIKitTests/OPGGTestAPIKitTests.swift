@@ -24,7 +24,7 @@ final class OPGGTestAPITests: XCTestCase {
 
         OPGGTestAPIProvider
             .shared
-            .request(target: .matches(name: "genetory")) { (result: Result<Match, Error>) in
+            .request(target: .matches(name: "genetory")) { (result: Result<Matches, Error>) in
                 if case .failure(let error) = result {
                     XCTFail(String(describing: error))
                 }
@@ -39,7 +39,7 @@ final class OPGGTestAPITests: XCTestCase {
 
         OPGGTestAPIProvider
             .shared
-            .request(target: .matches(name: "genetory", lastMatch: 1676852728)) { (result: Result<Match, Error>) in
+            .request(target: .matches(name: "genetory", lastMatch: 1676852728)) { (result: Result<Matches, Error>) in
                 if case .failure(let error) = result {
                     XCTFail(String(describing: error))
                 }
