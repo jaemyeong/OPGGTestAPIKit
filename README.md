@@ -12,8 +12,8 @@ OP.GG Test API 입니다.
 
 ## License
 
-- MIT
+- [MIT](LICENSE)
 
 ## Author
 
-> [Jaemyeong Jin](https://github.com/jaemyeong) ([jaemyeong@me.com](mailto:jaemyeong@me.com))
+[Jaemyeong Jin](https://github.com/jaemyeong) ([jaemyeong@me.com](mailto:jaemyeong@me.com))
