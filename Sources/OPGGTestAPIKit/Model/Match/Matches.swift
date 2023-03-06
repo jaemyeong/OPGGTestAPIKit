@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Match {
+public struct Matches {
     
     public typealias Champion = MatchChampion
     
@@ -13,4 +13,4 @@ public struct Match {
     public var games: [Game]
 }
 
-extension Match: Decodable {}
+extension Matches: Decodable {}

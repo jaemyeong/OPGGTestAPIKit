@@ -27,9 +27,6 @@ let package = Package(
             dependencies: [
                 .product(name: "Logging", package: "swift-log"),
                 .product(name: "RxMoya", package: "Moya"),
-            ],
-            resources: [
-                .process("Resources"),
             ]
         ),
         .testTarget(
