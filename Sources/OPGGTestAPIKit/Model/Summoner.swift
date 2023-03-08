@@ -62,7 +62,8 @@ extension Summoner: Decodable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: ContainerCodingKeys.self).nestedContainer(keyedBy: SummonerCodingKeys.self, forKey: .summoner)
         
-        self.name = try container.decode(String.self, forKey: .name)
+        let name = try container.decode(String.self, forKey: .name)
+        self.name = name.removingPercentEncoding ?? name
         self.level = try container.decode(Int.self, forKey: .level)
         self.url = try container.decode(URL.self, forKey: .url)
         self.profileImageURL = try container.decode(URL.self, forKey: .profileImageURL)
