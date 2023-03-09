@@ -14,7 +14,7 @@ OP.GG Test API 입니다.
 ### Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/jaemyeong/OPGGTestAPIKit.git", .upToNextMajor(from: "0.1.2"))
+.package(url: "https://github.com/jaemyeong/OPGGTestAPIKit.git", .upToNextMajor(from: "0.1.4"))
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ import OPGGTestAPIKit
 
 OPGGTestAPIProvider
     .shared
-    .request(target: .summoner(name: "genetory")) { (result: Result<Summoner, Error>) in
+    .request(target: .summoner(name: "genetory"), mappableType: Summoner.self) { result in
         ...
     }
 ```
