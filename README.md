@@ -16,7 +16,7 @@ OP.GG Test API 입니다.
 ### Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/jaemyeong/OPGGTestAPIKit.git", .upToNextMajor(from: "0.1.5"))
+.package(url: "https://github.com/jaemyeong/OPGGTestAPIKit.git", .upToNextMajor(from: "0.1.6"))
 ```
 
 ## Usage
