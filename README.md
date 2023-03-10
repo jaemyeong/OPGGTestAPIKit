@@ -8,15 +8,15 @@ OP.GG Test API 입니다.
 
 ## Requirements
 
-- macOS Ventura 13.2.1
-- Xcode 14.2
+- macOS Ventura 12.6.3
+- Xcode 13.4.1
 
 ## Installation
 
 ### Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/jaemyeong/OPGGTestAPIKit.git", .upToNextMajor(from: "0.1.4"))
+.package(url: "https://github.com/jaemyeong/OPGGTestAPIKit.git", .upToNextMajor(from: "0.1.5"))
 ```
 
 ## Usage

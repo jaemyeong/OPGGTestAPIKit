@@ -1,17 +1,23 @@
 name: Swift
-
 on:
   push:
-    branches: [ "main", "develop" ]
+    branches:
+      - main
+      - develop
   pull_request:
-    branches: [ "main", "develop" ]
-
+    branches:
+      - main
+      - develop
 jobs:
   build:
     runs-on: macos-12
     steps:
-    - uses: actions/checkout@v3
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+      - uses: actions/checkout@v3
+      - name: Selected Xcode
+        run: xcversion selected
+      - name: Select Xcode
+        run: xcversion select 13.4.1
+      - name: Build
+        run: swift build -v
+      - name: Run tests
+        run: swift test -v

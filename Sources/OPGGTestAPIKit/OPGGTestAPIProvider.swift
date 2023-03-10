@@ -14,7 +14,14 @@ public final class OPGGTestAPIProvider {
         return decoder
     }()
     
+    #if DEBUG
+    private let provider: MoyaProvider<OPGGTestAPI> = MoyaProvider<OPGGTestAPI>(stubClosure: MoyaProvider.delayedStub(1.0))
+    #else
     private let provider: MoyaProvider<OPGGTestAPI> = MoyaProvider<OPGGTestAPI>()
+    #endif
+}
+
+extension OPGGTestAPIProvider {
     
     @discardableResult
     public func request<T: Decodable>(target: OPGGTestAPI, mappableType: T.Type, completionHandler: @escaping (Result<T, Swift.Error>) -> Void) -> Disposable {
@@ -32,6 +39,9 @@ public final class OPGGTestAPIProvider {
             .request(target)
             .map(mappableType, using: Self.decoder)
     }
+}
+
+extension OPGGTestAPIProvider {
     
     @discardableResult
     public func download(url: URL, completionHandler: @escaping (Result<URL, Swift.Error>) -> Void) -> Disposable {
